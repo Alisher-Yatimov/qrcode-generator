@@ -1,0 +1,65 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: #4e7ef4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#input-link{
+    display: flex;
+    flex-direction: column;
+}
+
+#input-link label{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#qr-field{
+    width: 250px;
+    height: 250px;
+}
+
+#qr-field:hover{
+    scale: 1.3;
+}
+input[name="qrCode-value"]{
+    width: 400px;
+    height: 50px;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+}
+
+a{
+    transition: all ease-in .3s;
+}
+
+a:hover{
+    transform: scale(1.3);
+}
+.hint{
+    background: #fff;
+    position: absolute;
+    top: calc(100vh / 2.8);
+    width: 300px;
+    height: 60px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
